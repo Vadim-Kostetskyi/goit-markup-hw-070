@@ -1,0 +1,113 @@
+.footer {
+  max-width: 1600px;
+  font-size: 14px;
+  line-height: 1.71;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-clip);
+
+  &__box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  &__social {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 93px;
+  }
+  &__social__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: var(--white-color);
+  }
+  &__logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-bottom: 20px;
+  }
+  &__logo_item {
+    color: var(--white-color);
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+  }
+}
+
+.contacts {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__link-white {
+    color: var(--white-color);
+  }
+  &__list {
+    flex-direction: column;
+    gap: 0;
+  }
+  &__link {
+    color: var(--light-color);
+    transition: color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:focus,
+  &__link:hover {
+    color: var(--active-color);
+  }
+
+  &__adress {
+    color: var(--white-color);
+  }
+}
+
+.signed {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--white-color);
+  }
+  &__item {
+    display: flex;
+    outline: none;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    color: var(--white-color);
+    outline: none;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-clip);
+  }
+
+  &__icon {
+    margin-left: 10px;
+    bottom: 13px;
+    right: 28px;
+    fill: var(--white-color);
+  }
+}

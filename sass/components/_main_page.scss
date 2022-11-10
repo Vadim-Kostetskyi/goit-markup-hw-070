@@ -1,0 +1,215 @@
+.hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Studio/bg_image.jpg);
+  object-fit: fill;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__box {
+    width: 696px;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+
+    color: var(--white-color);
+  }
+}
+
+.quality {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  justify-content: center;
+  padding-bottom: 0;
+
+  &__ikon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+  }
+  &__svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.71;
+    width: 270px;
+    color: var(--green-color);
+  }
+}
+
+.activity {
+  &__title {
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--text);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &__box {
+    position: relative;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+  }
+  &__label {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  &__list {
+    justify-content: center;
+    gap: var(--indent);
+  }
+}
+
+.team {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 0;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #f5f4fa;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    margin-bottom: 50px;
+  }
+  &__list {
+    gap: var(--indent);
+  }
+  .container-team {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    padding-bottom: 30px;
+    --items: 4;
+    background-color: var(--white-color);
+  }
+  &__img {
+    margin-bottom: 30px;
+    height: auto;
+    width: 100%;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 1.19;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__position {
+    margin-bottom: 16px;
+
+    margin-bottom: 30px;
+
+    color: var(--green-color);
+  }
+}
+
+.clients {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &__list {
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    border-color: var(--grayly);
+
+    width: 170px;
+    height: 92px;
+
+    transition: border-color var(--transition-delay)
+      cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item:hover,
+  &__item:focus {
+    border-color: var(--active-color);
+  }
+
+  &__logo {
+    fill: var(--grayly);
+    width: 106px;
+    height: 60px;
+
+    transition: fill var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item:hover &__logo {
+    fill: var(--active-color);
+  }
+}
